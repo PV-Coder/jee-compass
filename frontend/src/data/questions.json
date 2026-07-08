@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Coulomb's Law",
+    "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "What is the SI unit of electric charge?",
+    "options": ["Ampere", "Coulomb", "Volt", "Farad"],
+    "correctAnswer": "Coulomb"
+  },
+  {
+    "id": 2,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Coulomb's Law",
+    "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "The force between two point charges is inversely proportional to the square of the distance. This is known as:",
+    "options": ["Newton's Law", "Gauss's Law", "Coulomb's Law", "Faraday's Law"],
+    "correctAnswer": "Coulomb's Law"
+  },
+  {
+    "id": 3,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Electric Field",
+    "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "The electric field lines of a positive point charge are:",
+    "options": ["Directed towards the charge", "Directed away from the charge", "Circular around the charge", "Parallel to each other"],
+    "correctAnswer": "Directed away from the charge"
+  },
+  {
+    "id": 4,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Electric Dipole",
+    "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "Two equal and opposite charges separated by a distance form a:",
+    "options": ["Monopole", "Quadrupole", "Electric Dipole", "Capacitor"],
+    "correctAnswer": "Electric Dipole"
+  },
+  {
+    "id": 5,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Gauss's Law",
+    "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "According to Gauss's Law, the total electric flux through a closed surface is proportional to the:",
+    "options": ["Total charge outside the surface", "Total charge enclosed by the surface", "Surface area of the closed surface", "Electric field at the surface"],
+    "correctAnswer": "Total charge enclosed by the surface"
+  },
+  {
+    "id": 6,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Gauss's Law",
+    "difficulty": "hard",
+    "bloomLevel": "Apply",
+    "question": "A charge of 5 μC is placed at the center of a cube. The electric flux through one face of the cube is:",
+    "options": ["5μC/ε₀", "5μC/6ε₀", "5μC/3ε₀", "Zero"],
+    "correctAnswer": "5μC/6ε₀"
+  },
+  {
+    "id": 7,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Electric Field Lines",
+    "difficulty": "medium",
+    "bloomLevel": "Analyze",
+    "question": "Which property of electric field lines indicates the strength of the electric field?",
+    "options": ["Color of the lines", "Density (closeness) of the lines", "Length of the lines", "Direction of the lines"],
+    "correctAnswer": "Density (closeness) of the lines"
+  },
+  {
+    "id": 8,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Coulomb's Law",
+    "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "If the distance between two charges is halved, the electrostatic force between them becomes:",
+    "options": ["Half", "Double", "Four times", "One-fourth"],
+    "correctAnswer": "Four times"
+  },
+  {
+    "id": 9,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Conductors",
+    "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "In a conductor in electrostatic equilibrium, the electric field inside is:",
+    "options": ["Maximum", "Minimum", "Zero", "Equal to surface field"],
+    "correctAnswer": "Zero"
+  },
+  {
+    "id": 10,
+    "chapter": "Electric Charges and Fields",
+    "chapterNo": 1,
+    "topic": "Electric Dipole",
+    "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "The torque on an electric dipole in a uniform electric field is maximum when the angle between dipole moment and field is:",
+    "options": ["0°", "45°", "90°", "180°"],
+    "correctAnswer": "90°"
+  },
+  {
+    "id": 11,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Electric Potential",
+    "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "The SI unit of electric potential is:",
+    "options": ["Joule", "Coulomb", "Volt", "Newton"],
+    "correctAnswer": "Volt"
+  },
+  {
+    "id": 12,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Electric Potential",
+    "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "The electric potential at a point due to a positive charge is:",
+    "options": ["Negative", "Zero", "Positive", "Depends on distance only"],
+    "correctAnswer": "Positive"
+  },
+  {
+    "id": 13,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Equipotential Surfaces",
+    "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "Work done in moving a charge along an equipotential surface is:",
+    "options": ["Maximum", "Minimum", "Zero", "Infinite"],
+    "correctAnswer": "Zero"
+  },
+  {
+    "id": 14,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Capacitance",
+    "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "The capacitance of a parallel plate capacitor increases when:",
+    "options": ["Distance between plates increases", "Area of plates decreases", "A dielectric is inserted between plates", "Charge on plates decreases"],
+    "correctAnswer": "A dielectric is inserted between plates"
+  },
+  {
+    "id": 15,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Capacitance",
+    "difficulty": "hard",
+    "bloomLevel": "Apply",
+    "question": "Three capacitors of 2μF, 3μF, and 6μF are connected in series. The equivalent capacitance is:",
+    "options": ["11 μF", "1 μF", "3 μF", "0.5 μF"],
+    "correctAnswer": "1 μF"
+  },
+  {
+    "id": 16,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Energy Stored",
+    "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "The energy stored in a capacitor of capacitance C charged to voltage V is:",
+    "options": ["CV", "CV²", "½CV²", "2CV²"],
+    "correctAnswer": "½CV²"
+  },
+  {
+    "id": 17,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Dielectrics",
+    "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "When a dielectric slab is inserted in a capacitor connected to a battery, the charge on the capacitor:",
+    "options": ["Decreases", "Remains same", "Increases", "Becomes zero"],
+    "correctAnswer": "Increases"
+  },
+  {
+    "id": 18,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Capacitor Combinations",
+    "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "Two equal capacitors connected in series vs parallel — ratio of equivalent capacitance (series:parallel) is:",
+    "options": ["1:4", "4:1", "1:2", "2:1"],
+    "correctAnswer": "1:4"
+  },
+  {
+    "id": 19,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Van de Graaff Generator",
+    "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "A Van de Graaff generator is used to:",
+    "options": ["Store magnetic energy", "Generate high voltage", "Measure capacitance", "Reduce electric field"],
+    "correctAnswer": "Generate high voltage"
+  },
+  {
+    "id": 20,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapterNo": 2,
+    "topic": "Capacitance",
+    "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "If plate area of a parallel plate capacitor is doubled and distance between plates is also doubled, the capacitance:",
+    "options": ["Doubles", "Halves", "Remains the same", "Quadruples"],
+    "correctAnswer": "Remains the same"
+  }
+]

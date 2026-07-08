@@ -1,0 +1,124 @@
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+.navbar__logo-icon { font-size: 1.5rem; }
+.navbar__logo strong { font-weight: 800; }
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.navbar__links a {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.navbar__links a:hover,
+.navbar__links a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.navbar__btn-signup {
+  background: var(--primary);
+  color: #fff !important;
+  padding: 8px 20px !important;
+  border-radius: var(--radius) !important;
+  font-weight: 600 !important;
+}
+.navbar__btn-signup:hover {
+  background: var(--primary-dark) !important;
+  color: #fff !important;
+}
+
+.navbar__logout {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.navbar__logout:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: #fef2f2;
+}
+
+/* Hamburger */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.navbar__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* Mobile menu */
+.navbar__mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 16px;
+  border-top: 1px solid var(--border);
+  gap: 4px;
+}
+.navbar__mobile a,
+.navbar__mobile button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  text-align: left;
+  transition: all var(--transition);
+}
+.navbar__mobile a:hover,
+.navbar__mobile button:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .navbar__links    { display: none; }
+  .navbar__hamburger { display: flex; }
+}

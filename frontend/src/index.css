@@ -1,0 +1,6 @@
+/* index.css — minimal resets; main styles are in styles/global.css */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
