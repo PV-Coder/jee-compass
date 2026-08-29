@@ -1,0 +1,136 @@
+.dr__header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 16px;
+  flex-wrap: wrap; margin-bottom: 24px;
+}
+
+/* ── Subject Tabs ─────────────────────────────────────────── */
+.dr__tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.dr__tab {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 20px; border-radius: var(--radius);
+  border: 1.5px solid var(--border); background: var(--bg-card);
+  font-size: 0.88rem; font-weight: 600; color: var(--text-secondary);
+  cursor: pointer; transition: all var(--transition); font-family: inherit;
+}
+.dr__tab:hover { border-color: var(--primary); color: var(--primary); }
+.dr__tab--active { color: #fff; }
+.dr__tab-score { font-size: 0.78rem; font-weight: 800; }
+
+/* ── Banner ───────────────────────────────────────────────── */
+.dr__banner {
+  border-radius: var(--radius-lg); padding: 32px 36px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap; margin-bottom: 28px; color: #fff;
+  position: relative; overflow: hidden;
+}
+.dr__banner::after {
+  content: ""; position: absolute; right: -50px; bottom: -50px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(255,255,255,0.06); pointer-events: none;
+}
+.dr__banner-left  { display: flex; align-items: flex-start; gap: 20px; flex: 1; }
+.dr__banner-icon  { font-size: 3rem; flex-shrink: 0; }
+.dr__banner-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 4px; }
+.dr__banner h2    { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.dr__banner-verdict {
+  display: inline-block; padding: 4px 14px; border-radius: 100px;
+  font-size: 0.88rem; font-weight: 700; margin-bottom: 8px;
+}
+.dr__banner-msg   { font-size: 0.85rem; opacity: 0.88; max-width: 380px; line-height: 1.5; }
+.dr__banner-right { display: flex; flex-direction: column; align-items: center; gap: 16px; flex-shrink: 0; }
+.dr__banner-stats { display: flex; gap: 24px; }
+.dr__banner-stats div { text-align: center; }
+.dr__banner-stats strong { display: block; font-size: 1.4rem; font-weight: 800; line-height: 1; }
+.dr__banner-stats span  { font-size: 0.7rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ── Grid ─────────────────────────────────────────────────── */
+.dr__grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+
+/* ── Card ─────────────────────────────────────────────────── */
+.dr__card {
+  background: var(--bg-card); border-radius: var(--radius-lg);
+  padding: 24px 28px; box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+.dr__card-title {
+  font-size: 1rem; font-weight: 700; color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+/* ── Bloom List ───────────────────────────────────────────── */
+.dr__bloom-list { display: flex; flex-direction: column; gap: 16px; }
+.dr__bloom-item {
+  padding: 14px 16px; border-radius: var(--radius);
+  border-left: 4px solid; background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.dr__bloom-header { display: flex; justify-content: space-between; align-items: center; }
+.dr__bloom-meta   { display: flex; justify-content: space-between; font-size: 0.75rem; flex-wrap: wrap; gap: 4px; }
+.dr__bloom-tip {
+  margin-top: 8px; padding: 8px 12px;
+  background: #fffbeb; border-radius: 8px;
+  font-size: 0.78rem; color: #92400e; line-height: 1.5;
+  border: 1px solid #fde68a;
+}
+
+/* ── Mastery Strip ────────────────────────────────────────── */
+.dr__mastery-strip { display: flex; gap: 6px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+.dr__mastery-pill {
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 0.72rem; font-weight: 700;
+  background: var(--bg-hover); color: var(--text-muted);
+  transition: all var(--transition);
+}
+.dr__mastery-pill--active { box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+
+/* ── Weak Areas ───────────────────────────────────────────── */
+.dr__weak-section { margin-bottom: 16px; }
+.dr__weak-label   { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+.dr__weak-pills   { display: flex; flex-wrap: wrap; gap: 8px; }
+.dr__weak-pill {
+  padding: 5px 14px; border-radius: 100px;
+  font-size: 0.78rem; font-weight: 700;
+}
+.dr__weak-pill--chapter { background: #fef3c7; color: #d97706; }
+
+/* ── Study Plan ───────────────────────────────────────────── */
+.dr__plan-list { display: flex; flex-direction: column; gap: 12px; }
+.dr__plan-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 14px 16px; border-radius: var(--radius-lg); border: 1.5px solid;
+}
+.dr__plan-item span { font-size: 1.3rem; flex-shrink: 0; }
+.dr__plan-item strong { display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 3px; }
+.dr__plan-item p      { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; }
+.dr__plan-item--green  { background: #f0fdf4; border-color: #bbf7d0; }
+.dr__plan-item--blue   { background: var(--primary-light); border-color: #bfdbfe; }
+.dr__plan-item--amber  { background: #fffbeb; border-color: #fde68a; }
+.dr__plan-item--red    { background: #fef2f2; border-color: #fecaca; }
+
+/* ── Actions ──────────────────────────────────────────────── */
+.dr__actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+.dr__btn {
+  padding: 13px 26px; border-radius: var(--radius-lg);
+  font-size: 0.9rem; font-weight: 700; font-family: inherit;
+  cursor: pointer; transition: all var(--transition);
+  border: 1.5px solid transparent;
+}
+.dr__btn:hover { opacity: 0.88; transform: translateY(-2px); }
+.dr__btn--primary { color: #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+.dr__btn--outline {
+  background: var(--bg-card); color: var(--text-secondary);
+  border-color: var(--border);
+}
+.dr__btn--outline:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1024px) { .dr__grid-2 { grid-template-columns: 1fr; } }
+@media (max-width: 768px) {
+  .dr__banner { flex-direction: column; }
+  .dr__banner-left { flex-direction: column; }
+  .dr__actions { flex-direction: column; }
+  .dr__btn { width: 100%; text-align: center; }
+}

@@ -1,0 +1,294 @@
+/* ── Breadcrumb ───────────────────────────────────────────── */
+.sd__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.sd__breadcrumb button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0;
+  transition: opacity var(--transition);
+}
+.sd__breadcrumb button:hover { opacity: 0.7; }
+
+/* ── Banner ───────────────────────────────────────────────── */
+.sd__banner {
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.sd__banner-left { display: flex; align-items: center; gap: 18px; }
+.sd__banner-icon { font-size: 3rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2)); }
+.sd__banner-left h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
+.sd__banner-left p  { font-size: 0.88rem; opacity: 0.85; max-width: 400px; line-height: 1.5; }
+
+.sd__banner-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+.sd__stat { text-align: center; }
+.sd__stat strong {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.sd__stat span {
+  font-size: 0.72rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+/* ── Overall Progress Bar ─────────────────────────────────── */
+.sd__overall-progress {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.sd__overall-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* ── Filter Tabs ──────────────────────────────────────────── */
+.sd__filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.sd__filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  border-radius: 100px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-card);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.sd__filter-btn:hover {
+  border-color: var(--subject-color, var(--primary));
+  color: var(--subject-color, var(--primary));
+}
+.sd__filter-btn--active { color: #fff; box-shadow: var(--shadow); }
+.sd__filter-count {
+  background: rgba(255,255,255,0.22);
+  padding: 1px 7px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.sd__filter-btn:not(.sd__filter-btn--active) .sd__filter-count {
+  background: var(--bg-hover);
+  color: var(--text-muted);
+}
+
+/* ── Chapter Grid ─────────────────────────────────────────── */
+.sd__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+/* ── Chapter Card ─────────────────────────────────────────── */
+.sd__card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.sd__card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--border);
+  transition: background var(--transition);
+}
+.sd__card--attempted::before {
+  background: var(--subject-color, var(--primary));
+}
+.sd__card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: var(--subject-color, var(--primary));
+}
+
+/* Top row */
+.sd__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.sd__card-left { display: flex; align-items: center; gap: 8px; }
+.sd__card-num {
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 11px;
+  border-radius: 8px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.sd__card-unit {
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+/* Status badge */
+.sd__status {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.sd__status--new  { background: #f1f5f9; color: #64748b; }
+.sd__status--low  { background: #fee2e2; color: #dc2626; }
+.sd__status--mid  { background: #fef3c7; color: #d97706; }
+.sd__status--good { background: #dcfce7; color: #16a34a; }
+.sd__status--done { background: #dbeafe; color: #2563eb; }
+
+/* Chapter name */
+.sd__card-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* Topics */
+.sd__card-topics { display: flex; flex-wrap: wrap; gap: 6px; }
+.sd__card-topic {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 100px;
+}
+.sd__card-topic--more {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary-light);
+  font-weight: 700;
+}
+
+/* Progress section */
+.sd__card-progress {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.sd__card-progress-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sd__card-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.sd__mastery-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.sd__mastery-stars { display: flex; gap: 2px; }
+.sd__star { font-size: 0.85rem; color: #e2e8f0; transition: color var(--transition); }
+.sd__star--on { color: #f59e0b; }
+.sd__card-bar { margin-top: 2px; }
+
+/* SVG Ring */
+.sd__ring { transform: rotate(-90deg); flex-shrink: 0; }
+.sd__ring-track { fill: none; stroke: var(--border); }
+.sd__ring-fill  { fill: none; stroke-linecap: round; transition: stroke-dashoffset 0.8s ease; }
+.sd__ring-text  {
+  fill: var(--text-primary);
+  font-size: 9px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+/* Actions */
+.sd__card-actions { display: flex; gap: 8px; margin-top: auto; }
+.sd__btn {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: none;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+.sd__btn--primary {
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.sd__btn--primary:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+}
+.sd__btn--outline {
+  background: transparent;
+  border: 1.5px solid;
+}
+.sd__btn--outline:hover { opacity: 0.75; transform: translateY(-1px); }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sd__banner { flex-direction: column; text-align: center; }
+  .sd__banner-left { flex-direction: column; align-items: center; }
+  .sd__banner-stats { justify-content: center; gap: 20px; }
+  .sd__grid { grid-template-columns: 1fr; }
+  .sd__filters { gap: 8px; }
+  .sd__filter-btn { padding: 7px 14px; font-size: 0.78rem; }
+}

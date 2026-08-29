@@ -58,7 +58,7 @@ const Signup = () => {
           <div className="auth-card__header">
             <span className="auth-card__icon">🧭</span>
             <h1>Create Account</h1>
-            <p>Join thousands of JEE aspirants today</p>
+            <p>Join thousands of JEE aspirants on EduPilot today</p>
           </div>
 
           <form onSubmit={handleSubmit} className="auth-form" noValidate>

@@ -62,7 +62,7 @@ const Login = () => {
         <div className="login-split__left-inner">
           <Link to="/" className="login-brand">
             <span className="login-brand__icon">🧭</span>
-            <span className="login-brand__name">JEE <strong>Compass</strong></span>
+            <span className="login-brand__name">Edu<strong>Pilot</strong></span>
           </Link>
 
           <div className="login-hero">
@@ -70,7 +70,7 @@ const Login = () => {
               Your personalised path to <span>IIT</span> starts here.
             </h2>
             <p className="login-hero__sub">
-              Join thousands of JEE aspirants using AI-powered diagnostics to study smarter.
+              Join thousands of JEE aspirants using AI-powered learning analytics to study smarter.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ const Login = () => {
           </ul>
 
           <div className="login-testimonial">
-            <p>"JEE Compass helped me identify my weak topics in Electrostatics within minutes."</p>
+            <p>"EduPilot helped me identify my weak topics in Electrostatics within minutes."</p>
             <div className="login-testimonial__author">
               <div className="login-testimonial__avatar">A</div>
               <div>
@@ -103,7 +103,7 @@ const Login = () => {
           {/* Mobile logo */}
           <Link to="/" className="login-brand login-brand--mobile">
             <span className="login-brand__icon">🧭</span>
-            <span className="login-brand__name">JEE <strong>Compass</strong></span>
+            <span className="login-brand__name">Edu<strong>Pilot</strong></span>
           </Link>
 
           <div className="login-form-header">

@@ -1,0 +1,250 @@
+[
+  {
+    "id": 101, "subject": "chemistry", "chapterNo": 1,
+    "chapter": "Solutions", "topic": "Molarity", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "What is the unit of molarity?",
+    "options": ["mol/kg", "mol/L", "g/L", "mol/m³"],
+    "correctAnswer": "mol/L"
+  },
+  {
+    "id": 102, "subject": "chemistry", "chapterNo": 1,
+    "chapter": "Solutions", "topic": "Raoult's Law", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "Raoult's Law states that the partial vapour pressure of a component is proportional to its:",
+    "options": ["Molality", "Mole fraction", "Molarity", "Mass fraction"],
+    "correctAnswer": "Mole fraction"
+  },
+  {
+    "id": 103, "subject": "chemistry", "chapterNo": 1,
+    "chapter": "Solutions", "topic": "Colligative Properties", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "Which colligative property is used to determine the molecular mass of a solute?",
+    "options": ["Colour change", "Elevation of boiling point", "Electrical conductivity", "Viscosity"],
+    "correctAnswer": "Elevation of boiling point"
+  },
+  {
+    "id": 104, "subject": "chemistry", "chapterNo": 1,
+    "chapter": "Solutions", "topic": "Van't Hoff Factor", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "For a solute that dissociates into 3 ions, the Van't Hoff factor (i) at complete dissociation is:",
+    "options": ["1", "2", "3", "0.5"],
+    "correctAnswer": "3"
+  },
+  {
+    "id": 105, "subject": "chemistry", "chapterNo": 2,
+    "chapter": "Electrochemistry", "topic": "Galvanic Cell", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "In a galvanic cell, oxidation occurs at the:",
+    "options": ["Cathode", "Anode", "Salt bridge", "Electrolyte"],
+    "correctAnswer": "Anode"
+  },
+  {
+    "id": 106, "subject": "chemistry", "chapterNo": 2,
+    "chapter": "Electrochemistry", "topic": "Nernst Equation", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "The Nernst equation relates the cell potential to:",
+    "options": ["Temperature only", "Concentration of ions", "Pressure only", "Volume of solution"],
+    "correctAnswer": "Concentration of ions"
+  },
+  {
+    "id": 107, "subject": "chemistry", "chapterNo": 2,
+    "chapter": "Electrochemistry", "topic": "Electrolysis", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "During electrolysis of water, which gas is produced at the cathode?",
+    "options": ["Oxygen", "Hydrogen", "Chlorine", "Nitrogen"],
+    "correctAnswer": "Hydrogen"
+  },
+  {
+    "id": 108, "subject": "chemistry", "chapterNo": 2,
+    "chapter": "Electrochemistry", "topic": "Kohlrausch's Law", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "Kohlrausch's law is used to calculate the molar conductivity of:",
+    "options": ["Strong electrolytes at high concentration", "Weak electrolytes at infinite dilution", "Non-electrolytes", "Molten salts"],
+    "correctAnswer": "Weak electrolytes at infinite dilution"
+  },
+  {
+    "id": 109, "subject": "chemistry", "chapterNo": 3,
+    "chapter": "Chemical Kinetics", "topic": "Rate of Reaction", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "The rate of a chemical reaction is expressed in units of:",
+    "options": ["mol/L", "mol/L·s", "L/mol", "mol·L"],
+    "correctAnswer": "mol/L·s"
+  },
+  {
+    "id": 110, "subject": "chemistry", "chapterNo": 3,
+    "chapter": "Chemical Kinetics", "topic": "Order of Reaction", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "For a zero-order reaction, the rate is:",
+    "options": ["Proportional to concentration", "Independent of concentration", "Inversely proportional to concentration", "Proportional to square of concentration"],
+    "correctAnswer": "Independent of concentration"
+  },
+  {
+    "id": 111, "subject": "chemistry", "chapterNo": 3,
+    "chapter": "Chemical Kinetics", "topic": "Arrhenius Equation", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "According to the Arrhenius equation, increasing temperature increases the rate constant because:",
+    "options": ["Activation energy decreases", "More molecules have energy ≥ activation energy", "Frequency factor decreases", "Collision frequency decreases"],
+    "correctAnswer": "More molecules have energy ≥ activation energy"
+  },
+  {
+    "id": 112, "subject": "chemistry", "chapterNo": 3,
+    "chapter": "Chemical Kinetics", "topic": "Half Life", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "For a first-order reaction, the half-life is:",
+    "options": ["Proportional to initial concentration", "Independent of initial concentration", "Inversely proportional to initial concentration", "Proportional to rate constant"],
+    "correctAnswer": "Independent of initial concentration"
+  },
+  {
+    "id": 113, "subject": "chemistry", "chapterNo": 7,
+    "chapter": "Coordination Compounds", "topic": "Ligands", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "A ligand that donates two pairs of electrons to the central metal ion is called:",
+    "options": ["Monodentate", "Bidentate", "Polydentate", "Ambidentate"],
+    "correctAnswer": "Bidentate"
+  },
+  {
+    "id": 114, "subject": "chemistry", "chapterNo": 7,
+    "chapter": "Coordination Compounds", "topic": "IUPAC Nomenclature", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "In IUPAC nomenclature of coordination compounds, the ligands are named:",
+    "options": ["After the central metal", "Before the central metal", "After the counter ion", "Alphabetically after the metal"],
+    "correctAnswer": "Before the central metal"
+  },
+  {
+    "id": 115, "subject": "chemistry", "chapterNo": 10,
+    "chapter": "Aldehydes, Ketones and Carboxylic Acids", "topic": "Aldol Condensation", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "Aldol condensation occurs between two molecules of an aldehyde in the presence of:",
+    "options": ["Acid only", "Base only", "Dilute acid or base", "Concentrated H₂SO₄"],
+    "correctAnswer": "Dilute acid or base"
+  },
+  {
+    "id": 116, "subject": "chemistry", "chapterNo": 10,
+    "chapter": "Aldehydes, Ketones and Carboxylic Acids", "topic": "Nucleophilic Addition", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "Ketones are less reactive than aldehydes in nucleophilic addition because:",
+    "options": ["Ketones have higher molecular mass", "Two alkyl groups cause steric hindrance and electron donation", "Ketones are more acidic", "Ketones have lower boiling points"],
+    "correctAnswer": "Two alkyl groups cause steric hindrance and electron donation"
+  },
+  {
+    "id": 201, "subject": "mathematics", "chapterNo": 1,
+    "chapter": "Relations and Functions", "topic": "Types of Relations", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "A relation R on set A is called reflexive if:",
+    "options": ["(a,b) ∈ R implies (b,a) ∈ R", "(a,a) ∈ R for all a ∈ A", "(a,b) and (b,c) ∈ R implies (a,c) ∈ R", "R contains no elements"],
+    "correctAnswer": "(a,a) ∈ R for all a ∈ A"
+  },
+  {
+    "id": 202, "subject": "mathematics", "chapterNo": 1,
+    "chapter": "Relations and Functions", "topic": "Types of Functions", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "A function f: A → B is called bijective if it is:",
+    "options": ["Only injective", "Only surjective", "Both injective and surjective", "Neither injective nor surjective"],
+    "correctAnswer": "Both injective and surjective"
+  },
+  {
+    "id": 203, "subject": "mathematics", "chapterNo": 3,
+    "chapter": "Matrices", "topic": "Matrix Operations", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "The transpose of a matrix A is obtained by:",
+    "options": ["Multiplying all elements by -1", "Interchanging rows and columns", "Adding identity matrix", "Squaring all elements"],
+    "correctAnswer": "Interchanging rows and columns"
+  },
+  {
+    "id": 204, "subject": "mathematics", "chapterNo": 3,
+    "chapter": "Matrices", "topic": "Symmetric Matrices", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "A square matrix A is symmetric if:",
+    "options": ["A = -Aᵀ", "A = Aᵀ", "A = A⁻¹", "A = A²"],
+    "correctAnswer": "A = Aᵀ"
+  },
+  {
+    "id": 205, "subject": "mathematics", "chapterNo": 4,
+    "chapter": "Determinants", "topic": "Properties of Determinants", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "If two rows of a determinant are identical, then its value is:",
+    "options": ["1", "-1", "0", "Undefined"],
+    "correctAnswer": "0"
+  },
+  {
+    "id": 206, "subject": "mathematics", "chapterNo": 4,
+    "chapter": "Determinants", "topic": "Inverse of Matrix", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "A matrix A is invertible if and only if:",
+    "options": ["det(A) = 1", "det(A) ≠ 0", "A is symmetric", "A is a square matrix"],
+    "correctAnswer": "det(A) ≠ 0"
+  },
+  {
+    "id": 207, "subject": "mathematics", "chapterNo": 5,
+    "chapter": "Continuity and Differentiability", "topic": "Continuity", "difficulty": "easy",
+    "bloomLevel": "Remember",
+    "question": "A function f(x) is continuous at x = a if:",
+    "options": ["f(a) is defined only", "lim f(x) as x→a exists only", "lim f(x) as x→a = f(a)", "f'(a) exists"],
+    "correctAnswer": "lim f(x) as x→a = f(a)"
+  },
+  {
+    "id": 208, "subject": "mathematics", "chapterNo": 5,
+    "chapter": "Continuity and Differentiability", "topic": "Chain Rule", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "If y = sin(x²), then dy/dx is:",
+    "options": ["cos(x²)", "2x·cos(x²)", "2x·sin(x²)", "-2x·cos(x²)"],
+    "correctAnswer": "2x·cos(x²)"
+  },
+  {
+    "id": 209, "subject": "mathematics", "chapterNo": 6,
+    "chapter": "Applications of Derivatives", "topic": "Maxima and Minima", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "At a point of local maximum, the second derivative f''(x) is:",
+    "options": ["Positive", "Zero", "Negative", "Undefined"],
+    "correctAnswer": "Negative"
+  },
+  {
+    "id": 210, "subject": "mathematics", "chapterNo": 6,
+    "chapter": "Applications of Derivatives", "topic": "Increasing/Decreasing", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "A function f(x) is strictly increasing on an interval if for all x in that interval:",
+    "options": ["f'(x) = 0", "f'(x) < 0", "f'(x) > 0", "f''(x) > 0"],
+    "correctAnswer": "f'(x) > 0"
+  },
+  {
+    "id": 211, "subject": "mathematics", "chapterNo": 7,
+    "chapter": "Integrals", "topic": "Integration by Parts", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "The formula for integration by parts is ∫u dv =",
+    "options": ["uv + ∫v du", "uv - ∫v du", "u/v + ∫v du", "∫u·v dx"],
+    "correctAnswer": "uv - ∫v du"
+  },
+  {
+    "id": 212, "subject": "mathematics", "chapterNo": 7,
+    "chapter": "Integrals", "topic": "Definite Integrals", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "The property ∫[a to b] f(x)dx = ∫[a to b] f(a+b-x)dx is known as:",
+    "options": ["Linearity property", "King's property", "Splitting property", "Symmetry property"],
+    "correctAnswer": "King's property"
+  },
+  {
+    "id": 213, "subject": "mathematics", "chapterNo": 13,
+    "chapter": "Probability", "topic": "Bayes Theorem", "difficulty": "medium",
+    "bloomLevel": "Understand",
+    "question": "Bayes' theorem is used to find:",
+    "options": ["Joint probability", "Marginal probability", "Posterior probability", "Cumulative probability"],
+    "correctAnswer": "Posterior probability"
+  },
+  {
+    "id": 214, "subject": "mathematics", "chapterNo": 13,
+    "chapter": "Probability", "topic": "Binomial Distribution", "difficulty": "hard",
+    "bloomLevel": "Analyze",
+    "question": "For a binomial distribution B(n,p), the mean is:",
+    "options": ["np(1-p)", "np", "n/p", "p/n"],
+    "correctAnswer": "np"
+  },
+  {
+    "id": 215, "subject": "mathematics", "chapterNo": 10,
+    "chapter": "Vector Algebra", "topic": "Cross Product", "difficulty": "medium",
+    "bloomLevel": "Apply",
+    "question": "The cross product of two parallel vectors is:",
+    "options": ["A unit vector", "A non-zero vector", "Zero vector", "Undefined"],
+    "correctAnswer": "Zero vector"
+  }
+]

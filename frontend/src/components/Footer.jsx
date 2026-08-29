@@ -4,15 +4,14 @@ const Footer = () => (
   <footer className="footer">
     <div className="container footer__inner">
       <div className="footer__brand">
-        <span className="footer__logo">🧭 JEE <strong>Compass</strong></span>
-        <p>AI-Based Competency Assessment Platform for JEE aspirants.</p>
+        <span className="footer__logo">🧭 Edu<strong>Pilot</strong></span>
+        <p>AI-Powered Learning Analytics for JEE Aspirants.</p>
       </div>
       <div className="footer__links">
         <h4>Quick Links</h4>
         <a href="/dashboard">Dashboard</a>
-        <a href="/test">Diagnostic Test</a>
-        <a href="/analysis">Analysis</a>
-        <a href="/recommendations">Recommendations</a>
+        <a href="/diagnostic">Diagnostic Test</a>
+        <a href="/analytics">Analytics</a>
       </div>
       <div className="footer__links">
         <h4>Resources</h4>
@@ -22,7 +21,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__bottom">
-      <p>© {new Date().getFullYear()} JEE Compass. Built for JEE aspirants.</p>
+      <p>© {new Date().getFullYear()} EduPilot. Built for JEE aspirants.</p>
     </div>
   </footer>
 );

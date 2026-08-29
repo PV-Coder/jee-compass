@@ -1,0 +1,261 @@
+/* ── Subject Dashboard Shell ──────────────────────────────── */
+.sdb__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+/* ── Hero Banner ──────────────────────────────────────────── */
+.sdb__banner {
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sdb__banner::after {
+  content: "";
+  position: absolute;
+  right: -40px; top: -40px;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+  pointer-events: none;
+}
+.sdb__banner-left  { display: flex; align-items: center; gap: 20px; }
+.sdb__banner-icon  { font-size: 3.5rem; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25)); }
+.sdb__banner-left h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 4px; }
+.sdb__banner-left p  { font-size: 0.9rem; opacity: 0.85; max-width: 380px; line-height: 1.5; }
+.sdb__banner-stats { display: flex; gap: 32px; flex-wrap: wrap; }
+.sdb__bstat { text-align: center; }
+.sdb__bstat strong { display: block; font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+.sdb__bstat span   { font-size: 0.7rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+
+/* ── Tabs ─────────────────────────────────────────────────── */
+.sdb__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.sdb__tab {
+  padding: 9px 20px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--bg-card);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.sdb__tab:hover { border-color: var(--sdb-color, var(--primary)); color: var(--sdb-color, var(--primary)); }
+.sdb__tab--active {
+  background: var(--sdb-color, var(--primary));
+  color: #fff;
+  border-color: var(--sdb-color, var(--primary));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.sdb__card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.sdb__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Stat Grid ────────────────────────────────────────────── */
+.sdb__stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.sdb__stat-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-top: 3px solid;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  text-align: center;
+}
+.sdb__stat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.sdb__stat-icon {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+}
+.sdb__stat-val   { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+.sdb__stat-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* ── Ring wrap (reuse global) ─────────────────────────────── */
+.sdb__ring-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.sdb__ring-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.sdb__ring-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.sdb__ring-label { font-size: 0.88rem; font-weight: 700; color: var(--text-primary); text-align: center; }
+.sdb__ring-sub   { font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-align: center; }
+
+/* ── Progress Bar Row ─────────────────────────────────────── */
+.sdb__bar-list { display: flex; flex-direction: column; gap: 16px; }
+.sdb__bar-item { display: flex; flex-direction: column; gap: 6px; }
+.sdb__bar-header { display: flex; justify-content: space-between; align-items: center; }
+.sdb__bar-name   { font-size: 0.88rem; font-weight: 700; color: var(--text-primary); }
+.sdb__bar-pct    { font-size: 0.88rem; font-weight: 800; }
+.sdb__bar-meta   { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ── Topic Pills ──────────────────────────────────────────── */
+.sdb__topic-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.sdb__topic-pill {
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1.5px solid;
+  transition: all var(--transition);
+}
+.sdb__topic-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+.sdb__topic-pill--strong { background: #dcfce7; border-color: #86efac; color: #15803d; }
+.sdb__topic-pill--weak   { background: #fee2e2; border-color: #fca5a5; color: #dc2626; }
+.sdb__topic-pill--neutral { background: var(--bg-hover); border-color: var(--border); color: var(--text-secondary); }
+
+/* ── Two-col grid ─────────────────────────────────────────── */
+.sdb__grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+.sdb__grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 24px; }
+
+/* ── Category Card (Chemistry) ────────────────────────────── */
+.sdb__cat-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+.sdb__cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.sdb__cat-header {
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+}
+.sdb__cat-icon  { font-size: 2rem; }
+.sdb__cat-header h3 { font-size: 1rem; font-weight: 800; margin-bottom: 2px; }
+.sdb__cat-header p  { font-size: 0.78rem; opacity: 0.85; }
+.sdb__cat-body  { padding: 18px 22px; background: var(--bg-card); }
+.sdb__cat-stats { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.82rem; }
+.sdb__cat-stat  { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.sdb__cat-stat strong { font-size: 1.2rem; font-weight: 800; }
+.sdb__cat-stat span   { font-size: 0.68rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+
+/* ── Skill Meter (Math) ───────────────────────────────────── */
+.sdb__skill-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px; }
+.sdb__skill-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition);
+  text-align: center;
+}
+.sdb__skill-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.sdb__skill-name  { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+.sdb__skill-desc  { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+.sdb__skill-badge {
+  padding: 4px 14px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* ── Chapter Table ────────────────────────────────────────── */
+.sdb__table-wrap { overflow-x: auto; }
+.sdb__table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.sdb__table th {
+  text-align: left; padding: 10px 14px;
+  background: var(--bg); color: var(--text-muted);
+  font-weight: 700; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--border);
+}
+.sdb__table td {
+  padding: 12px 14px; border-bottom: 1px solid var(--border);
+  color: var(--text-primary); vertical-align: middle;
+}
+.sdb__table tr:last-child td { border-bottom: none; }
+.sdb__table tr:hover td { background: var(--bg-hover); }
+
+/* ── Insight strip ────────────────────────────────────────── */
+.sdb__insights { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.sdb__insight {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 16px 18px; border-radius: var(--radius-lg); border: 1.5px solid;
+}
+.sdb__insight-icon { font-size: 1.4rem; flex-shrink: 0; }
+.sdb__insight strong { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 3px; }
+.sdb__insight p      { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; }
+.sdb__insight--green  { background: #f0fdf4; border-color: #bbf7d0; }
+.sdb__insight--red    { background: #fef2f2; border-color: #fecaca; }
+.sdb__insight--blue   { background: var(--primary-light); border-color: #bfdbfe; }
+.sdb__insight--amber  { background: #fffbeb; border-color: #fde68a; }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .sdb__stat-grid  { grid-template-columns: repeat(2, 1fr); }
+  .sdb__grid-2     { grid-template-columns: 1fr; }
+  .sdb__grid-3     { grid-template-columns: 1fr; }
+  .sdb__skill-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .sdb__banner { flex-direction: column; text-align: center; }
+  .sdb__banner-left { flex-direction: column; align-items: center; }
+  .sdb__banner-stats { justify-content: center; gap: 20px; }
+  .sdb__stat-grid  { grid-template-columns: repeat(2, 1fr); }
+  .sdb__ring-row   { grid-template-columns: repeat(2, 1fr); }
+}

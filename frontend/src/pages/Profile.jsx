@@ -11,11 +11,19 @@ const Profile = () => {
   const [user,    setUser]    = useState(null);
   const [history, setHistory] = useState([]);
 
-  useEffect(() => {
+  const loadData = () => {
     const u = JSON.parse(localStorage.getItem("jee_user") || "null");
     if (!u) { navigate("/login"); return; }
     setUser(u);
     setHistory(JSON.parse(localStorage.getItem("jee_test_history") || "[]"));
+  };
+
+  useEffect(() => {
+    loadData();
+    // Refresh when localStorage changes (e.g. after completing a test)
+    const onStorage = () => loadData();
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, [navigate]);
 
   if (!user) return null;
@@ -77,7 +85,7 @@ const Profile = () => {
                   <div className="profile__empty">
                     <span>📝</span>
                     <p>No tests taken yet.</p>
-                    <Button size="sm" onClick={() => navigate("/test")}>Take First Test</Button>
+                    <Button size="sm" onClick={() => navigate("/subjects")}>Take First Test</Button>
                   </div>
                 ) : (
                   <div className="profile__history">
